@@ -58,6 +58,7 @@ Full role prompts will live in `agents/`. Until then, this table is the contract
 6. **Secrets never enter the repo.** Use repository or environment secrets. CI scans every push.
 7. **Stay in budget.** Each issue states a budget. If you will exceed it, stop and report where you are.
 8. **Small PRs.** One issue, one PR. If the change grows, split the issue.
+9. **Who merges.** Interim rule, until the first client engagement is signed: Claude may merge its own PRs when every CI check is green and the PR touches no client data and no Class C item. Everything else waits for a human. Other agents never merge. When the first client signs, this rule ends and merges need a code owner's approval (see ADR 0001).
 
 ## Data classes
 

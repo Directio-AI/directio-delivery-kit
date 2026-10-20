@@ -1,6 +1,6 @@
 # ADR 0001: Runtime, tracker and enforcement
 
-- Status: proposed
+- Status: accepted
 - Date: 2026-10-18
 
 ## Context
@@ -13,7 +13,7 @@ Directio wants a delivery system any coding agent can work in, cloud-only for no
 2. **Instructions:** `AGENTS.md` is canonical. Tool-specific files (`CLAUDE.md` and others) are one-line pointers.
 3. **Runtime:** cloud coding agents. We start with Claude and will trial one other agent on a real issue, so the portability claim is tested in practice.
 4. **Enforcement in CI:** every PR runs secret scanning (gitleaks), a structure check and a fixture guard. These are the checks branch protection should require.
-5. **Review:** `CODEOWNERS` names the humans who approve. Agents never approve or merge.
+5. **Review:** `CODEOWNERS` names the humans who approve. Agents never approve. Interim exception (decided by Jaime, 2026-10-20): until the first client engagement is signed, Claude may merge its own PRs when CI is green and no Class C item or client data is involved. The exception ends when the organization moves to Team.
 6. **Production:** a GitHub environment named `production` with required reviewers. Agents stop before it.
 
 ## Repository settings to apply (by an org owner)
@@ -26,7 +26,7 @@ Directio wants a delivery system any coding agent can work in, cloud-only for no
 
 ## Decisions for a human
 
-1. GitHub plan: move the organization to **Team** (paid per member) so the gates are enforced, or stay on **Free** and rely on discipline until the first client engagement. Recommendation: Team before any client work.
+1. GitHub plan: **decided 2026-10-20.** Stay on Free until the first client engagement signs, then move to Team before any client work enters a repo.
 
 ## Consequences
 
