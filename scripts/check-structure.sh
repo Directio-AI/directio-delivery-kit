@@ -12,6 +12,8 @@ required=(
   artifacts/plan/TEMPLATE.md
   .github/PULL_REQUEST_TEMPLATE.md
   .github/CODEOWNERS
+  policy/data-classification.md
+  policy/ai-use-policy.md
 )
 missing=0
 for f in "${required[@]}"; do
