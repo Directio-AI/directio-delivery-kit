@@ -15,7 +15,7 @@ Goal: the repo can accept work safely before any client work starts.
 - [x] CI gates: secret scanning, structure check, fixture guard
 - [ ] Repository settings applied (see ADR 0001)
 - [ ] Agent role prompts in `agents/`
-- [ ] Policies: data classification, AI use policy, confidentiality agreement template
+- [x] Policies: data classification, AI use policy, confidentiality agreement template (drafts; agreement awaits lawyer review)
 - [ ] Client-space template and new-client script
 
 ## Next phase: first engagement

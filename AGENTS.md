@@ -69,7 +69,7 @@ Every issue and every client process carries one:
 - **Personal**: identifies a person (names, IDs, plates, phone numbers).
 - **Sensitive**: health, financial account, biometric or similar.
 
-Only **Public** data and synthetic fixtures may appear in this repo. Personal and sensitive data must be redacted before any model sees it, and never reaches a cloud tool without a signed agreement with the client.
+Full handling rules are in [policy/data-classification.md](policy/data-classification.md). Only **Public** data and synthetic fixtures may appear in this repo. Personal and sensitive data must be redacted before any model sees it, and never reaches a cloud tool without a signed agreement with the client.
 
 ## Switching agents or models
 
