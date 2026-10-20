@@ -1,0 +1,48 @@
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  secret-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: gitleaks
+        run: |
+          docker run --rm -v "$PWD:/repo" ghcr.io/gitleaks/gitleaks:v8.21.2 \
+            detect --source /repo --redact --verbose --no-banner
+
+  structure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: scripts/check-structure.sh
+
+  fixture-guard:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Golden fixtures change only with human approval
+        env:
+          BASE: ${{ github.event.pull_request.base.sha }}
+          APPROVED: ${{ contains(github.event.pull_request.labels.*.name, 'fixture-change-approved') }}
+        run: |
+          changed=$(git diff --name-only "$BASE" HEAD -- ci/golden | grep -v '\.gitkeep$' || true)
+          if [[ -n "$changed" && "$APPROVED" != "true" ]]; then
+            echo "Golden fixtures changed without the fixture-change-approved label:"
+            echo "$changed"
+            exit 1
+          fi
+          echo "ok"

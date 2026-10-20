@@ -1,0 +1,63 @@
+name: Work unit
+description: One piece of work for a human or an agent
+labels: ["needs-human"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What should be true when this is done, in one or two sentences.
+    validations:
+      required: true
+  - type: textarea
+    id: done-when
+    attributes:
+      label: Done when
+      description: A check anyone can run (a test, a command, a file that exists). Not "looks good".
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Files in scope
+      description: Paths the work may change. Anything else is out of scope.
+    validations:
+      required: true
+  - type: dropdown
+    id: data-class
+    attributes:
+      label: Data class
+      options: [Public, Business confidential, Personal, Sensitive]
+    validations:
+      required: true
+  - type: dropdown
+    id: autonomy
+    attributes:
+      label: Autonomy level
+      options:
+        - "1: agent proposes, human does"
+        - "2: agent does, human approves each step"
+        - "3: agent does, human approves the PR"
+    validations:
+      required: true
+  - type: input
+    id: budget
+    attributes:
+      label: Budget
+      description: Time or cost cap, for example "2 agent sessions" or "US$5 of API usage".
+    validations:
+      required: true
+  - type: dropdown
+    id: artifacts
+    attributes:
+      label: Artifact chain
+      options:
+        - Full (intent, spec, plan)
+        - Plan only
+        - Skip (docs or config with no behaviour change)
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context and links
