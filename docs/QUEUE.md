@@ -1,12 +1,12 @@
-# Queue
+# Cola
 
-Ordered list of work ready to start. The Orchestrator promotes from here; humans reorder.
+Lista ordenada del trabajo listo para empezar. El Orquestador toma de aquí; las personas cambian el orden.
 
-| # | Item | Depends on | Data class |
+| # | Tarea | Depende de | Clase de datos |
 |---|---|---|---|
-| 1 | Apply repository settings from ADR 0001 (human) | this PR | Public |
-| 2 | Write agent role prompts in `agents/` | this PR | Public |
-| 3 | Fill the approved tools list in `policy/data-classification.md` (human, Class C) | | Public |
-| 4 | Lawyer review of `policy/confidentiality-agreement-es.md` (human) | | Public |
-| 5 | Client-space template and `scripts/new-client` | 2, 3 | Public |
-| 6 | Radar: first sources list and weekly job | 2 | Public |
+| 1 | Escribir los prompts de cada rol en `agents/` | | Pública |
+| 2 | Completar la lista de herramientas aprobadas en `policy/data-classification.md` (persona, Clase C) | | Pública |
+| 3 | Revisión legal de `policy/confidentiality-agreement.md` (persona) | | Pública |
+| 4 | Plantilla de espacio de cliente y `scripts/new-client` | 1, 2 | Pública |
+| 5 | Radar: primera lista de fuentes y tarea semanal | 1 | Pública |
+| 6 | Crear las etiquetas de estado del ADR 0001 | | Pública |

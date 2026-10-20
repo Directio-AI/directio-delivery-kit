@@ -1,29 +1,30 @@
 # Plan
 
-_Last updated: 2026-10-20_
+_Última actualización: 2026-10-20_
 
-## Purpose
+## Propósito
 
-Build a delivery kit that lets Directio deploy AI into client processes the same way every time: discovery, process map, spec, build, verify, operate. Any coding agent can do the build work because the rules live in the repo and CI.
+Construir un kit que le permita a Directio implementar IA en los procesos de sus clientes siempre de la misma forma: diagnóstico, mapa del proceso, especificación, construcción, verificación y operación. Cualquier agente de programación puede hacer la construcción porque las reglas viven en el repositorio y en CI.
 
-## Current phase: foundation
+## Fase actual: cimientos
 
-Goal: the repo can accept work safely before any client work starts.
+Objetivo: que el repositorio pueda recibir trabajo de forma segura antes de empezar con cualquier cliente.
 
-- [x] Repo created (private, `Directio-AI` organization)
-- [x] Agent instructions, source-of-truth files, artifact and work-unit templates
-- [x] CI gates: secret scanning, structure check, fixture guard
-- [ ] Repository settings applied (see ADR 0001)
-- [ ] Agent role prompts in `agents/`
-- [x] Policies: data classification, AI use policy, confidentiality agreement template (drafts; agreement awaits lawyer review)
-- [ ] Client-space template and new-client script
+- [x] Repositorio creado (privado, organización `Directio-AI`)
+- [x] Instrucciones para agentes, documentos fuente de verdad, plantillas de artefactos y de unidad de trabajo
+- [x] Controles de CI: búsqueda de secretos, revisión de estructura, protección de datos de prueba
+- [x] Políticas: clasificación de datos, uso de IA, plantilla de acuerdo de confidencialidad (borradores; el acuerdo espera revisión legal)
+- [x] Convención de idioma: español primero, inglés segundo
+- [ ] Prompts de cada rol en `agents/`
+- [ ] Plantilla de espacio de cliente y script para crear clientes nuevos
+- [ ] Configuración del repositorio aplicada (ver ADR 0001; parte depende del plan de GitHub)
 
-## Next phase: first engagement
+## Siguiente fase: primer cliente
 
-Use the kit on the first client process (candidate: the furniture group pilot). Discovery only until a confidentiality agreement is signed; no client data enters any cloud tool before then.
+Usar el kit en el primer proceso de un cliente (candidato: el piloto con el grupo de muebles). Solo diagnóstico hasta que se firme un acuerdo de confidencialidad; ningún dato del cliente entra en una herramienta en la nube antes de eso.
 
-## Out of scope for now
+## Fuera de alcance por ahora
 
-- Local or on-premise models (revisit when a client requires data to stay in their building)
-- Durable workflow engines (Temporal or similar)
-- Anything specific to Sin Demora, Ventara or any single client
+- Modelos locales o en las instalaciones del cliente (se revisa cuando un cliente exija que sus datos no salgan de su edificio)
+- Motores de flujos de larga duración (Temporal o similares)
+- Cualquier cosa específica de Sin Demora, Ventara o de un solo cliente

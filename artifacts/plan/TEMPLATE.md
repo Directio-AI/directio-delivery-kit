@@ -1,17 +1,17 @@
-# Plan: <title>
+# Plan: <título>
 
-- Spec: artifacts/spec/<file>.md
-- Issue: #<number>
-- Approved by: <name, or "pending">
+- Especificación: artifacts/spec/<archivo>.md
+- Issue: #<número>
+- Aprobado por: <nombre, o "pendiente">
 
-## Files to change
-- path: why
+## Archivos a cambiar
+- ruta: por qué
 
-## Steps
+## Pasos
 1. ...
 
-## Tests
-Which tests prove each acceptance criterion; failing tests to write first.
+## Pruebas
+Qué pruebas demuestran cada criterio de aceptación; qué pruebas que fallan se escriben primero.
 
-## Risks and rollback
-What could go wrong and how to undo it.
+## Riesgos y reversión
+Qué puede salir mal y cómo deshacerlo.

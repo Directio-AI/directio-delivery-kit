@@ -1,5 +1,7 @@
 # Acuerdo de Confidencialidad Mutua
 
+_Versión original para firma. Traducción de referencia al inglés: [confidentiality-agreement.en.md](confidentiality-agreement.en.md)._
+
 > **Borrador para revisión legal.** Esta plantilla no ha sido revisada por un abogado. Debe ser revisada por un abogado guatemalteco antes de firmarse. Los campos entre corchetes se completan para cada cliente.
 
 En la ciudad de [ciudad], el [fecha], comparecen:

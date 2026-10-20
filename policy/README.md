@@ -1,12 +1,13 @@
-# Policy
+# Políticas
 
-Rules that hold for every engagement, every agent and every person at Directio.
+_Versión en inglés: [README.en.md](README.en.md)._
 
-| File | What it is | Audience |
-|---|---|---|
-| [data-classification.md](data-classification.md) | How we classify, handle, store and delete client data | Internal, agents |
-| [ai-use-policy.md](ai-use-policy.md) | What AI tools may be used for, with what data, and who stays accountable | Internal; shareable with clients |
-| [ai-use-policy-es.md](ai-use-policy-es.md) | Spanish version of the AI use policy, for clients | Clients |
-| [confidentiality-agreement-es.md](confidentiality-agreement-es.md) | Mutual confidentiality agreement template (Spanish) for prospects before discovery | Clients |
+Reglas que aplican a todo proyecto, todo agente y toda persona en Directio. Los archivos en español son los originales; los `.en.md` son versiones en inglés y, si difieren, prevalece el español.
 
-**Status: drafts.** None of these has been reviewed by a lawyer. The confidentiality agreement must be reviewed by a Guatemalan lawyer before it is signed with anyone. The policies are operating rules and apply now.
+| Español (original) | Inglés | Qué es | Para quién |
+|---|---|---|---|
+| [data-classification.md](data-classification.md) | [data-classification.en.md](data-classification.en.md) | Cómo clasificamos, tratamos, guardamos y eliminamos datos de clientes | Interno, agentes |
+| [ai-use-policy.md](ai-use-policy.md) | [ai-use-policy.en.md](ai-use-policy.en.md) | Para qué se puede usar IA, con qué datos y quién responde | Interno; se puede compartir con clientes |
+| [confidentiality-agreement.md](confidentiality-agreement.md) | [confidentiality-agreement.en.md](confidentiality-agreement.en.md) | Plantilla de acuerdo de confidencialidad mutua para prospectos antes del diagnóstico | Clientes |
+
+**Estado: borradores.** Ninguno ha sido revisado por un abogado. El acuerdo de confidencialidad debe revisarlo un abogado guatemalteco antes de firmarse con cualquier persona; solo el texto en español está pensado para firma. Las políticas son reglas de operación y aplican desde ya.
