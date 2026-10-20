@@ -1,25 +1,26 @@
 ## Issue
 Closes #
 
-## Artifacts
-- Intent:
-- Spec:
+## Artefactos
+- Intención:
+- Especificación:
 - Plan:
 
-## What changed
-Before:
+## Qué cambió
+Antes:
 
-After:
+Después:
 
-## Evidence
-Test output or the command that proves "done when":
+## Evidencia
+Resultado de las pruebas o el comando que demuestra el "terminado cuando":
 
 ```
-paste output here
+pegar el resultado aquí
 ```
 
-## Checklist
-- [ ] Only files in the issue's scope changed
-- [ ] No client data, secrets or credentials
-- [ ] `docs/BOARD.md` and `docs/QUEUE.md` updated if state changed
-- [ ] Golden fixtures unchanged, or `fixture-change-approved` label applied by a human
+## Lista de verificación
+- [ ] Solo cambiaron archivos dentro del alcance del issue
+- [ ] Sin datos de clientes, secretos ni credenciales
+- [ ] `docs/BOARD.md` y `docs/QUEUE.md` actualizados si cambió el estado
+- [ ] Si un documento tiene versión en inglés (`.en.md`), ambas versiones están actualizadas
+- [ ] Datos de prueba de referencia sin cambios, o etiqueta `fixture-change-approved` puesta por una persona

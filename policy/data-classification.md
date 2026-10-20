@@ -1,40 +1,40 @@
-# Data classification and handling
+# Clasificación y tratamiento de datos
 
-_Status: draft, in force internally. Last updated: 2026-10-20._
+_Versión original. Traducción al inglés: [data-classification.en.md](data-classification.en.md). Estado: borrador vigente internamente. Última actualización: 2026-10-20._
 
-Guatemala has no comprehensive personal data protection law in force as of this writing (verify the status of the pending bill before each new client). We follow this policy anyway: serious clients expect these controls whether or not the law requires them, and foreign law (GDPR, US state laws) can apply when a client's customers or partners are abroad.
+Guatemala no tiene, a la fecha de este documento, una ley integral de protección de datos personales vigente (verificar el estado de la iniciativa de ley antes de cada cliente nuevo). Aun así seguimos esta política: los clientes serios esperan estos controles aunque la ley no los exija, y la ley extranjera (GDPR, leyes estatales de EE. UU.) puede aplicar cuando los clientes o socios de nuestro cliente están en el exterior.
 
-## The four classes
+## Las cuatro clases
 
-| Class | Examples | May reach a cloud AI tool? | May live in a repo? |
+| Clase | Ejemplos | ¿Puede llegar a una herramienta de IA en la nube? | ¿Puede estar en un repositorio? |
 |---|---|---|---|
-| **Public** | Published price lists, catalogues, website text | Yes | Yes |
-| **Business confidential** | Costs, margins, supplier terms, production volumes, internal processes, unpublished designs | Only after a signed confidentiality agreement and only through tools on the approved list | Only in that client's own private repo |
-| **Personal** | Names, ID numbers (DPI, NIT), phone numbers, emails, addresses, plates, payroll rows tied to a person | Only redacted or pseudonymized, after a signed agreement | Never in raw form; redacted samples only |
-| **Sensitive** | Health, bank account or card numbers, biometric data, salary of a named person, legal disputes | No, unless the client approves the specific tool and purpose in writing | Never |
+| **Pública** | Listas de precios publicadas, catálogos, textos del sitio web | Sí | Sí |
+| **Confidencial de negocio** | Costos, márgenes, condiciones con proveedores, volúmenes de producción, procesos internos, diseños no publicados | Solo después de firmar un acuerdo de confidencialidad y solo con herramientas de la lista aprobada | Solo en el repositorio privado de ese cliente |
+| **Personal** | Nombres, DPI, NIT, teléfonos, correos, direcciones, placas, filas de planilla asociadas a una persona | Solo anonimizados o seudonimizados, después de un acuerdo firmado | Nunca en crudo; solo muestras anonimizadas |
+| **Sensible** | Salud, cuentas bancarias o tarjetas, datos biométricos, salario de una persona identificada, disputas legales | No, salvo que el cliente apruebe por escrito la herramienta y el propósito concretos | Nunca |
 
-When in doubt, classify one level higher.
+Si hay duda, se clasifica un nivel más arriba.
 
-## Rules
+## Reglas
 
-1. **Classify at intake.** Every file a client sends gets a class before anyone opens it in an AI tool. Record it in the client repo's data register (`docs/data-register.md`): file, source, class, owner, date received, retention date.
-2. **Minimize.** Ask for only the columns and periods the process needs. Drop the rest before any processing.
-3. **Redact before the model.** Personal identifiers are replaced with stable pseudonyms (for example `EMP-0042`) before any model sees the data. The mapping table stays with the client or in the client's encrypted storage, never in a prompt.
-4. **Approved tools only.** Client data goes only into tools on the approved list below, on business or API tiers whose terms exclude training on our data. Consumer accounts are never used for client data.
-5. **Client owns the data.** We process it only for the engagement and return or delete it at the end.
-6. **Retention.** Default: raw client files deleted 30 days after the engagement ends; derived artifacts (process maps, specs) kept unless the client asks otherwise. Logs and traces follow the same retention as the data they contain.
-7. **Traces are data too.** Prompt logs, agent traces and chat histories that contain client data are classified like that data.
-8. **Access.** Least privilege. One private repo and one secrets store per client. No shared passwords. Access removed when the engagement ends.
-9. **Incidents.** Any suspected leak (wrong recipient, data pasted into an unapproved tool, lost device) is reported to the founders the same day and to the client within 72 hours of confirmation, with what happened and what we did.
+1. **Clasificar al recibir.** Cada archivo que envía un cliente recibe una clase antes de abrirse en cualquier herramienta de IA. Se registra en el registro de datos del repositorio del cliente (`docs/data-register.md`): archivo, origen, clase, responsable, fecha de recepción y fecha de eliminación.
+2. **Minimizar.** Pedir solo las columnas y los periodos que el proceso necesita. Eliminar lo demás antes de procesar.
+3. **Anonimizar antes del modelo.** Los identificadores personales se reemplazan por seudónimos estables (por ejemplo `EMP-0042`) antes de que cualquier modelo vea los datos. La tabla de equivalencias queda con el cliente o en el almacenamiento cifrado del cliente, nunca en un prompt.
+4. **Solo herramientas aprobadas.** Los datos de clientes solo entran en herramientas de la lista aprobada, en planes empresariales o de API cuyos términos excluyan entrenar con nuestros datos. Nunca se usan cuentas personales o de consumo para datos de clientes.
+5. **El cliente es dueño de sus datos.** Solo los procesamos para el proyecto y los devolvemos o eliminamos al terminar.
+6. **Conservación.** Por defecto, los archivos originales del cliente se eliminan 30 días después de terminar el proyecto; los entregables derivados (mapas de procesos, especificaciones) se conservan salvo que el cliente pida otra cosa. Los registros y trazas se conservan igual que los datos que contienen.
+7. **Las trazas también son datos.** Los registros de prompts, trazas de agentes e historiales de chat que contienen datos de clientes se clasifican como esos datos.
+8. **Accesos.** Mínimo privilegio. Un repositorio privado y un almacén de secretos por cliente. Sin contraseñas compartidas. Los accesos se retiran al terminar el proyecto.
+9. **Incidentes.** Cualquier posible fuga (destinatario equivocado, datos pegados en una herramienta no aprobada, un equipo perdido) se reporta a los socios fundadores el mismo día y al cliente dentro de las 72 horas siguientes a confirmarla, con lo que pasó y lo que hicimos.
 
-## Approved tools
+## Herramientas aprobadas
 
-Kept short on purpose. Adding a tool is a Class C decision (needs a founder).
+Lista corta a propósito. Agregar una herramienta es una decisión Clase C (requiere a un socio fundador).
 
-| Tool | Allowed classes | Notes |
+| Herramienta | Clases permitidas | Notas |
 |---|---|---|
-| _(to fill before the first client)_ | | Confirm current terms: no training on inputs, retention period, data region |
+| _(completar antes del primer cliente)_ | | Confirmar los términos vigentes: no entrena con los datos, periodo de conservación, región donde se procesan |
 
-## For agents
+## Para los agentes
 
-Agents treat this file as binding. If an issue or file implies data above **Public** in this repo, stop and label `needs-human`.
+Los agentes deben cumplir este archivo. Si un issue o un archivo implica datos de una clase superior a **Pública** en este repositorio, detente y etiqueta `needs-human`.

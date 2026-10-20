@@ -1,17 +1,17 @@
-# Board
+# Tablero
 
-What is in flight right now. Updated by the PR that changes it.
+Lo que está en curso ahora. Lo actualiza el PR que lo cambia.
 
-## Building
-_(none)_
+## En construcción
+_(nada)_
 
-## Verifying
-_(none)_
+## En verificación
+_(nada)_
 
-## Needs human
-- Move the organization to GitHub Team when the first client signs (ADR 0001)
-- Lawyer review of the confidentiality agreement before first use
-- Choose the approved AI tools for client data
+## Necesita a una persona
+- Pasar la organización a GitHub Team cuando se firme el primer cliente (ADR 0001)
+- Revisión legal del acuerdo de confidencialidad antes de usarlo
+- Elegir las herramientas de IA aprobadas para datos de clientes
 
-## Blocked
-_(none)_
+## Bloqueado
+_(nada)_

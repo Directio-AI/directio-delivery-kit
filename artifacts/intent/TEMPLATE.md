@@ -1,17 +1,17 @@
-# Intent: <title>
+# Intención: <título>
 
-- Issue: #<number>
-- Author: <human who owns this intent>
-- Data class: Public | Business confidential | Personal | Sensitive
+- Issue: #<número>
+- Responsable: <persona dueña de esta intención>
+- Clase de datos: Pública | Confidencial de negocio | Personal | Sensible
 
-## Problem
-What is wrong or missing today, in the user's words.
+## Problema
+Qué está mal o qué falta hoy, en palabras del usuario.
 
-## Outcome
-What will be true when this is done, and how we will know.
+## Resultado
+Qué será cierto cuando esto esté terminado, y cómo lo sabremos.
 
-## Constraints
-Budget, deadlines, systems we must not touch, data rules.
+## Restricciones
+Presupuesto, fechas, sistemas que no se deben tocar, reglas de datos.
 
-## Out of scope
-What this does not cover.
+## Fuera de alcance
+Lo que esto no cubre.

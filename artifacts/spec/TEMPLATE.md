@@ -1,18 +1,18 @@
-# Spec: <title>
+# Especificación: <título>
 
-- Intent: artifacts/intent/<file>.md
-- Issue: #<number>
+- Intención: artifacts/intent/<archivo>.md
+- Issue: #<número>
 
-## Behaviour
-What the system does, step by step, including failure cases.
+## Comportamiento
+Qué hace el sistema, paso a paso, incluidos los casos de falla.
 
-## Acceptance criteria
-Each one testable. These become the "done when" checks.
+## Criterios de aceptación
+Cada uno se puede probar. Se convierten en las verificaciones de "terminado cuando".
 
-1. Given ..., when ..., then ...
+1. Dado ..., cuando ..., entonces ...
 
-## Data
-Inputs, outputs, data class of each, and what gets redacted.
+## Datos
+Entradas, salidas, clase de datos de cada una y qué se anonimiza.
 
-## Open questions
-Anything a human must answer before planning.
+## Preguntas abiertas
+Lo que una persona debe responder antes de planificar.

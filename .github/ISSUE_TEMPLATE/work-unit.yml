@@ -1,63 +1,63 @@
-name: Work unit
-description: One piece of work for a human or an agent
+name: Unidad de trabajo
+description: Una pieza de trabajo para una persona o un agente
 labels: ["needs-human"]
 body:
   - type: textarea
     id: goal
     attributes:
-      label: Goal
-      description: What should be true when this is done, in one or two sentences.
+      label: Objetivo
+      description: Qué debe ser cierto cuando esto esté terminado, en una o dos oraciones.
     validations:
       required: true
   - type: textarea
     id: done-when
     attributes:
-      label: Done when
-      description: A check anyone can run (a test, a command, a file that exists). Not "looks good".
+      label: Terminado cuando
+      description: Una verificación que cualquiera pueda ejecutar (una prueba, un comando, un archivo que existe). No "se ve bien".
     validations:
       required: true
   - type: textarea
     id: scope
     attributes:
-      label: Files in scope
-      description: Paths the work may change. Anything else is out of scope.
+      label: Archivos en alcance
+      description: Rutas que el trabajo puede cambiar. Todo lo demás está fuera de alcance.
     validations:
       required: true
   - type: dropdown
     id: data-class
     attributes:
-      label: Data class
-      options: [Public, Business confidential, Personal, Sensitive]
+      label: Clase de datos
+      options: [Pública, Confidencial de negocio, Personal, Sensible]
     validations:
       required: true
   - type: dropdown
     id: autonomy
     attributes:
-      label: Autonomy level
+      label: Nivel de autonomía
       options:
-        - "1: agent proposes, human does"
-        - "2: agent does, human approves each step"
-        - "3: agent does, human approves the PR"
+        - "1: el agente propone, una persona ejecuta"
+        - "2: el agente ejecuta, una persona aprueba cada paso"
+        - "3: el agente ejecuta, una persona aprueba el PR"
     validations:
       required: true
   - type: input
     id: budget
     attributes:
-      label: Budget
-      description: Time or cost cap, for example "2 agent sessions" or "US$5 of API usage".
+      label: Presupuesto
+      description: Tope de tiempo o costo, por ejemplo "2 sesiones de agente" o "US$5 de uso de API".
     validations:
       required: true
   - type: dropdown
     id: artifacts
     attributes:
-      label: Artifact chain
+      label: Cadena de artefactos
       options:
-        - Full (intent, spec, plan)
-        - Plan only
-        - Skip (docs or config with no behaviour change)
+        - Completa (intención, especificación, plan)
+        - Solo plan
+        - Ninguna (documentación o configuración sin cambio de comportamiento)
     validations:
       required: true
   - type: textarea
     id: context
     attributes:
-      label: Context and links
+      label: Contexto y enlaces
