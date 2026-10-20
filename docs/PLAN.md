@@ -1,6 +1,6 @@
 # Plan
 
-_Last updated: 2026-10-18_
+_Last updated: 2026-10-20_
 
 ## Purpose
 
@@ -11,8 +11,8 @@ Build a delivery kit that lets Directio deploy AI into client processes the same
 Goal: the repo can accept work safely before any client work starts.
 
 - [x] Repo created (private, `Directio-AI` organization)
-- [ ] Agent instructions, source-of-truth files, artifact and work-unit templates
-- [ ] CI gates: secret scanning, structure check, fixture guard
+- [x] Agent instructions, source-of-truth files, artifact and work-unit templates
+- [x] CI gates: secret scanning, structure check, fixture guard
 - [ ] Repository settings applied (see ADR 0001)
 - [ ] Agent role prompts in `agents/`
 - [ ] Policies: data classification, AI use policy, confidentiality agreement template
