@@ -1,6 +1,6 @@
 # Plan
 
-_Última actualización: 2026-10-20_
+_Última actualización: 2026-10-21_
 
 ## Propósito
 
@@ -15,6 +15,7 @@ Objetivo: que el repositorio pueda recibir trabajo de forma segura antes de empe
 - [x] Controles de CI: búsqueda de secretos, revisión de estructura, protección de datos de prueba
 - [x] Políticas: clasificación de datos, uso de IA, plantilla de acuerdo de confidencialidad (borradores; el acuerdo espera revisión legal)
 - [x] Convención de idioma: español primero, inglés segundo
+- [x] Estándar de ingeniería: código limpio, trabajo con agentes, evaluaciones y observabilidad (`docs/engineering-standard.md`)
 - [ ] Prompts de cada rol en `agents/`
 - [ ] Plantilla de espacio de cliente y script para crear clientes nuevos
 - [ ] Configuración del repositorio aplicada (ver ADR 0001; parte depende del plan de GitHub)

@@ -15,6 +15,7 @@ El Directio Delivery Kit: la base compartida, neutral respecto de cualquier clie
 1. `docs/PLAN.md`: hacia dónde vamos y qué está en alcance ahora.
 2. `docs/QUEUE.md`: la lista ordenada del trabajo listo para empezar.
 3. `docs/BOARD.md`: lo que está en curso, bloqueado o esperando a una persona.
+4. `docs/engineering-standard.md`: cómo escribimos, verificamos y entregamos el trabajo.
 
 Si el issue que te asignaron contradice estos archivos, detente y dilo en el issue. No adivines.
 
@@ -63,6 +64,7 @@ Los prompts completos de cada rol vivirán en `agents/`. Mientras tanto, esta ta
 9. **Quién hace merge.** Regla temporal, hasta que se firme el primer cliente: Claude puede hacer merge de sus propios PRs cuando todos los controles de CI están en verde y el PR no toca datos de clientes ni temas Clase C. Todo lo demás espera a una persona. Los demás agentes nunca hacen merge. Cuando se firme el primer cliente, esta regla termina y todo merge necesita la aprobación de un code owner (ver ADR 0001).
 10. **Idioma: español primero, inglés segundo.** Los documentos para personas se escriben en español; `nombre.md` es el original en español y `nombre.en.md` su versión en inglés (si difieren, prevalece el español). Los documentos estables (políticas, README, estas instrucciones) tienen versión en inglés. Los documentos de trabajo vivos (PLAN, QUEUE, BOARD, ADRs) y las plantillas para llenar van solo en español, para que no haya dos versiones que se desfasen. El código, los identificadores, los mensajes de commit, los nombres de ramas y los títulos de PR van en inglés. Si cambias un documento que tiene versión en inglés, actualiza ambas en el mismo PR.
 11. **Limpia lo que creas.** Cada worktree y cada rama que abras son tuyos hasta que los borres. Al empezar cada sesión, corre `scripts/clean-worktrees.sh` (muestra lo que haría) y luego `scripts/clean-worktrees.sh --apply`. Cuando tu PR se fusione o se cierre, borra su rama remota, tu worktree y tu rama local en esa misma sesión. Un worktree sin commits durante 7 días que el script marca como inactivo se reporta en su issue y se cierra o se retoma; no se deja abandonado. Nunca borres un worktree con cambios sin commit ni uno que no sea tuyo: repórtalo.
+12. **Sigue el estándar de ingeniería.** [docs/engineering-standard.md](docs/engineering-standard.md) dice cómo escribimos código, cómo trabajamos con agentes y cómo construimos, evaluamos y observamos los sistemas con IA que entregamos. Si algo no está ahí ni en estas reglas, elige la opción más simple y dilo en el PR.
 
 ## Clases de datos
 

@@ -15,6 +15,7 @@ The Directio Delivery Kit: the shared, client-neutral backbone Directio uses to 
 1. `docs/PLAN.md`: where we are going and what is in scope now.
 2. `docs/QUEUE.md`: the ordered list of work that is ready.
 3. `docs/BOARD.md`: what is in flight, blocked or waiting on a human.
+4. `docs/engineering-standard.en.md`: how we write, verify and deliver work.
 
 If the issue you were given conflicts with these files, stop and say so on the issue. Do not guess.
 
@@ -63,6 +64,7 @@ Full role prompts will live in `agents/`. Until then, this table is the contract
 9. **Who merges.** Interim rule, until the first client engagement is signed: Claude may merge its own PRs when every CI check is green and the PR touches no client data and no Class C item. Everything else waits for a human. Other agents never merge. When the first client signs, this rule ends and merges need a code owner's approval (see ADR 0001).
 10. **Language: Spanish first, English second.** Human-facing documents are written in Spanish; `name.md` is the Spanish original and `name.en.md` its English version (the Spanish prevails if they differ). Stable documents (policies, README, these instructions) get an English version. Living working documents (PLAN, QUEUE, BOARD, ADRs) and fill-in templates are Spanish only, so twins don't drift. Code, identifiers, commit messages, branch names and PR titles stay in English. When you change a document that has a twin, update both in the same PR.
 11. **Clean up after yourself.** Every worktree and branch you open is yours until you delete it. At the start of every session, run `scripts/clean-worktrees.sh` (shows what it would do), then `scripts/clean-worktrees.sh --apply`. When your PR is merged or closed, delete its remote branch, your worktree and your local branch in that same session. A worktree the script flags as idle (no commits for 7 days) gets reported on its issue and is either closed or picked back up, never left behind. Never delete a worktree with uncommitted changes or one that isn't yours: report it.
+12. **Follow the engineering standard.** [docs/engineering-standard.en.md](docs/engineering-standard.en.md) covers how we write code, how we work with agents, and how we build, evaluate and observe the AI systems we deliver. If something is not covered there or in these rules, pick the simplest option and say so in the PR.
 
 ## Data classes
 
