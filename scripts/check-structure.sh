@@ -2,6 +2,7 @@
 # Fails if any file the agents rely on is missing, or if a Spanish document's English twin is missing.
 set -euo pipefail
 required=(
+  scripts/clean-worktrees.sh
   AGENTS.md
   CLAUDE.md
   docs/PLAN.md
