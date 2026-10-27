@@ -31,9 +31,28 @@ When in doubt, classify one level higher.
 
 Kept short on purpose. Adding a tool is a Class C decision (needs a founder).
 
-| Tool | Allowed classes | Notes |
+Reviewed 2026-10-27 against each provider's published terms. Terms change: review before each new client and every 6 months. "Personal" always means pseudonymized (rule 3); **Sensitive** data goes into no tool without the client's written approval.
+
+### Approved for client data
+
+| Tool | Allowed classes | Why, and conditions |
 |---|---|---|
-| _(to fill before the first client)_ | | Confirm current terms: no training on inputs, retention period, data region |
+| **OpenAI**: ChatGPT Business or Enterprise, and the API | Public, Business confidential, Personal (pseudonymized) | OpenAI states it does not train on data from these plans by default. Retention is configurable (zero retention on the API for qualifying accounts). |
+| **Anthropic Claude**: Team or Enterprise, and the API (includes Claude Code under commercial terms) | Public, Business confidential, Personal (pseudonymized) | Anthropic states it does not train on data under commercial terms. Standard retention is 30 days. |
+| **Google Gemini**: Gemini in qualifying Google Workspace editions, and the paid tier of the Gemini API | Public, Business confidential, Personal (pseudonymized) | Google states it does not use this data to train or improve products. **The free API tier and Google AI Studio without billing do use it**: forbidden for client data. |
+
+### Internal work only (no client data for now)
+
+| Tool | Allowed classes | Why, and conditions |
+|---|---|---|
+| **Cursor** | Public; code from client repos only with Privacy Mode enforced for the whole team | With Privacy Mode, Cursor states it does not train on the code and has zero-retention agreements with its model providers. Without it, Cursor may store and train on the code. Never personal data. |
+| **Grok (xAI)** | Public | The consumer version uses what you type for training. Business and API plans exist, but we have not verified their data terms. Re-evaluate if a client asks for it. |
+| **Meta's Muse agent** | Public | Launched in 2026; we found no published enterprise data-handling terms, and analysts flag trust concerns. Re-evaluate when they exist. |
+| **Hermes Agent (Nous Research)** | Whatever the connected model allows | Open source and runs on our own server; data goes only to the model provider it is configured with. Candidate for clients who don't want data leaving their infrastructure. |
+
+### Never, for client data
+
+Free or personal accounts of any tool (ChatGPT, Claude, Gemini, Grok, Meta AI and the like), even when the tool's business version is listed above.
 
 ## For agents
 

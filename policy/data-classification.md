@@ -31,9 +31,28 @@ Si hay duda, se clasifica un nivel más arriba.
 
 Lista corta a propósito. Agregar una herramienta es una decisión Clase C (requiere a un socio fundador).
 
-| Herramienta | Clases permitidas | Notas |
+Revisada el 2026-10-27 contra los términos publicados por cada proveedor. Los términos cambian: se revisan antes de cada cliente nuevo y cada 6 meses. "Personal" significa siempre seudonimizado (regla 3); los datos **Sensibles** no entran en ninguna herramienta sin aprobación escrita del cliente.
+
+### Aprobadas para datos de clientes
+
+| Herramienta | Clases permitidas | Por qué, y condiciones |
 |---|---|---|
-| _(completar antes del primer cliente)_ | | Confirmar los términos vigentes: no entrena con los datos, periodo de conservación, región donde se procesan |
+| **OpenAI**: ChatGPT Business o Enterprise, y la API | Pública, Confidencial de negocio, Personal (seudonimizado) | OpenAI declara que no entrena con datos de estos planes por defecto. La conservación se puede configurar (cero conservación en la API para cuentas que califican). |
+| **Anthropic Claude**: Team o Enterprise, y la API (incluye Claude Code bajo términos comerciales) | Pública, Confidencial de negocio, Personal (seudonimizado) | Anthropic declara que no entrena con datos bajo términos comerciales. Conservación estándar de 30 días. |
+| **Google Gemini**: Gemini en ediciones de Google Workspace que califican, y la API de Gemini en el nivel de pago | Pública, Confidencial de negocio, Personal (seudonimizado) | Google declara que no usa estos datos para entrenar ni mejorar productos. **El nivel gratuito de la API y Google AI Studio sin facturación sí los usan**: prohibidos para datos de clientes. |
+
+### Solo para trabajo interno (sin datos de clientes por ahora)
+
+| Herramienta | Clases permitidas | Por qué, y condiciones |
+|---|---|---|
+| **Cursor** | Pública; código de repositorios de clientes solo con Privacy Mode obligatorio para todo el equipo | Con Privacy Mode, Cursor declara que no entrena con el código y tiene acuerdos de cero conservación con sus proveedores de modelos. Sin Privacy Mode puede guardar y entrenar con el código. Nunca datos personales. |
+| **Grok (xAI)** | Pública | La versión de consumo usa lo que escribes para entrenar. Existen planes empresariales y API, pero no verificamos sus términos de datos. Se reevalúa si un cliente lo pide. |
+| **Agente Muse de Meta** | Pública | Lanzado en 2026; no encontramos términos publicados de tratamiento de datos para empresas, y los analistas señalan dudas de confianza. Se reevalúa cuando existan. |
+| **Hermes Agent (Nous Research)** | La que permita el modelo al que se conecte | Es código abierto y corre en nuestro propio servidor; los datos van solo al proveedor de modelo que se configure. Candidato para clientes que no quieren que sus datos salgan de su infraestructura. |
+
+### Nunca, para datos de clientes
+
+Cuentas gratuitas o personales de cualquier herramienta (ChatGPT, Claude, Gemini, Grok, Meta AI y similares), aunque la herramienta aparezca arriba en su versión empresarial.
 
 ## Para los agentes
 
