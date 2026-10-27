@@ -31,9 +31,15 @@ Si hay duda, se clasifica un nivel más arriba.
 
 Lista corta a propósito. Agregar una herramienta es una decisión Clase C (requiere a un socio fundador).
 
+Usamos IA en tres capas, y cada una tiene reglas distintas:
+
+1. **Nuestra base.** Herramientas de Directio, en cuentas nuestras, para construir y operar el kit y nuestro trabajo interno. Sin datos de clientes.
+2. **Construcción.** Durante el diagnóstico y la construcción manejamos datos reales del cliente. **Preferido:** trabajar dentro de las licencias del cliente desde el primer día (nos crean una cuenta o una llave de API). **Alternativa:** si procesamos en nuestro lado, solo con nuestras cuentas aprobadas abajo, nunca con cuentas personales o de consumo.
+3. **Producción.** La solución corre con las licencias del cliente (su ChatGPT Enterprise, su Microsoft 365 o Google Workspace, sus llaves de API). Los datos quedan bajo el contrato del cliente con el proveedor; nosotros configuramos y operamos.
+
 Revisada el 2026-10-27 contra los términos publicados por cada proveedor. Los términos cambian: se revisan antes de cada cliente nuevo y cada 6 meses. "Personal" significa siempre seudonimizado (regla 3); los datos **Sensibles** no entran en ninguna herramienta sin aprobación escrita del cliente.
 
-### Aprobadas para datos de clientes
+### Capa 2: nuestras cuentas aprobadas para datos de clientes
 
 | Herramienta | Clases permitidas | Por qué, y condiciones |
 |---|---|---|
@@ -41,7 +47,9 @@ Revisada el 2026-10-27 contra los términos publicados por cada proveedor. Los t
 | **Anthropic Claude**: Team o Enterprise, y la API (incluye Claude Code bajo términos comerciales) | Pública, Confidencial de negocio, Personal (seudonimizado) | Anthropic declara que no entrena con datos bajo términos comerciales. Conservación estándar de 30 días. |
 | **Google Gemini**: Gemini en ediciones de Google Workspace que califican, y la API de Gemini en el nivel de pago | Pública, Confidencial de negocio, Personal (seudonimizado) | Google declara que no usa estos datos para entrenar ni mejorar productos. **El nivel gratuito de la API y Google AI Studio sin facturación sí los usan**: prohibidos para datos de clientes. |
 
-### Solo para trabajo interno (sin datos de clientes por ahora)
+### Capa 1: solo trabajo interno (sin datos de clientes)
+
+Cualquier herramienta de la capa 2 sirve también aquí. Además, los planes de consumo que pagamos (por ejemplo Claude Max) sirven para trabajo interno con el entrenamiento de modelos desactivado en su configuración de privacidad.
 
 | Herramienta | Clases permitidas | Por qué, y condiciones |
 |---|---|---|
@@ -49,6 +57,17 @@ Revisada el 2026-10-27 contra los términos publicados por cada proveedor. Los t
 | **Grok (xAI)** | Pública | La versión de consumo usa lo que escribes para entrenar. Existen planes empresariales y API, pero no verificamos sus términos de datos. Se reevalúa si un cliente lo pide. |
 | **Agente Muse de Meta** | Pública | Lanzado en 2026; no encontramos términos publicados de tratamiento de datos para empresas, y los analistas señalan dudas de confianza. Se reevalúa cuando existan. |
 | **Hermes Agent (Nous Research)** | La que permita el modelo al que se conecte | Es código abierto y corre en nuestro propio servidor; los datos van solo al proveedor de modelo que se configure. Candidato para clientes que no quieren que sus datos salgan de su infraestructura. |
+
+### Capa 3: licencias del cliente
+
+El cliente elige y paga el proveedor; nosotros no lo imponemos. Antes de conectar cualquier proceso, verificamos con su administrador:
+
+- Que el plan sea empresarial o de API, no de consumo.
+- Que el entrenamiento con sus datos esté desactivado y el periodo de conservación sea el que el cliente quiere.
+- Que Directio tenga su propio usuario o llave, con el mínimo acceso necesario, y que se pueda revocar al terminar.
+- Que el costo de uso quede a nombre del cliente, con un tope de gasto configurado.
+
+Lo verificado se registra en el repositorio del cliente.
 
 ### Nunca, para datos de clientes
 
