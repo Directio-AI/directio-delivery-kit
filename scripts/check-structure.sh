@@ -16,6 +16,8 @@ required=(
   policy/data-classification.md
   policy/ai-use-policy.md
   docs/engineering-standard.md
+  scripts/new-client.sh
+  client-template/README.md
 )
 missing=0
 for f in "${required[@]}"; do
@@ -25,8 +27,9 @@ for f in "${required[@]}"; do
   fi
 done
 # Stable bilingual documents: every Spanish original needs its .en.md version.
-bilingual=(README.md AGENTS.md policy/README.md policy/data-classification.md policy/ai-use-policy.md policy/confidentiality-agreement.md docs/engineering-standard.md)
+bilingual=(README.md AGENTS.md policy/README.md policy/data-classification.md policy/ai-use-policy.md policy/confidentiality-agreement.md docs/engineering-standard.md client-template/*.md)
 for f in "${bilingual[@]}"; do
+  [[ "$f" == *.en.md ]] && continue
   en="${f%.md}.en.md"
   if [[ -f "$f" && ! -f "$en" ]]; then
     echo "missing English version: $en"
