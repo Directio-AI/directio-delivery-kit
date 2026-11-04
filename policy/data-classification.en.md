@@ -69,9 +69,17 @@ The client chooses and pays for the vendor; we don't impose one. Before connecti
 
 What we checked is recorded in the client's repo.
 
+### Clients starting on basic or free plans
+
+Most of our clients start on basic or free plans. We don't ask them for a business plan to start: first we show value, then we give leadership reasons to move to one. Meanwhile:
+
+- **In their own basic or free accounts:** only exercises with made-up data, public information, or data without real names, amounts or identifiers. We show them how to turn off training on their data in the privacy settings.
+- **Their real, confidential data:** we process it ourselves on our approved layer 2 accounts, for example the API. The client buys nothing for the pilot.
+- **For the solution to run in their company:** we recommend a business or API plan in their name (layer 3), once they have seen the value.
+
 ### Never, for client data
 
-Free or personal accounts of any tool (ChatGPT, Claude, Gemini, Grok, Meta AI and the like), even when the tool's business version is listed above.
+A client's real, confidential data in free or personal accounts of any tool (ChatGPT, Claude, Gemini, Grok, Meta AI and the like), ours or the client's, even when the tool's business version is listed above.
 
 ## For agents
 

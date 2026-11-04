@@ -69,9 +69,17 @@ El cliente elige y paga el proveedor; nosotros no lo imponemos. Antes de conecta
 
 Lo verificado se registra en el repositorio del cliente.
 
+### Clientes que empiezan con planes básicos o gratuitos
+
+La mayoría de nuestros clientes empieza con planes básicos o gratuitos. No les pedimos un plan empresarial para empezar: primero demostramos valor y después les damos razones para que la dirección pase a uno. Mientras tanto:
+
+- **En sus propias cuentas básicas o gratuitas:** solo ejercicios con datos ficticios, información pública o datos sin nombres, montos ni identificadores reales. Les enseñamos a apagar la opción de entrenamiento con sus datos en la configuración de privacidad.
+- **Sus datos reales y confidenciales:** los procesamos nosotros en nuestras cuentas aprobadas de la capa 2, por ejemplo la API. El cliente no compra nada para el piloto.
+- **Para que la solución quede funcionando en su empresa:** recomendamos un plan empresarial o de API a su nombre (capa 3), cuando ya vieron el valor.
+
 ### Nunca, para datos de clientes
 
-Cuentas gratuitas o personales de cualquier herramienta (ChatGPT, Claude, Gemini, Grok, Meta AI y similares), aunque la herramienta aparezca arriba en su versión empresarial.
+Datos reales y confidenciales de un cliente en cuentas gratuitas o personales de cualquier herramienta (ChatGPT, Claude, Gemini, Grok, Meta AI y similares), sean nuestras o del cliente, aunque la herramienta aparezca arriba en su versión empresarial.
 
 ## Para los agentes
 
