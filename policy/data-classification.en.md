@@ -31,9 +31,55 @@ When in doubt, classify one level higher.
 
 Kept short on purpose. Adding a tool is a Class C decision (needs a founder).
 
-| Tool | Allowed classes | Notes |
+We use AI in three layers, each with different rules:
+
+1. **Our backbone.** Directio's tools, on our accounts, to build and run the kit and our internal work. No client data.
+2. **Build.** During discovery and construction we handle real client data. **Preferred:** work inside the client's licenses from day one (they create an account or API key for us). **Fallback:** if we process on our side, only with our approved accounts below, never with personal or consumer accounts.
+3. **Production.** The solution runs on the client's licenses (their ChatGPT Enterprise, their Microsoft 365 or Google Workspace, their API keys). Data stays under the client's contract with the vendor; we configure and operate.
+
+Reviewed 2026-10-27 against each provider's published terms. Terms change: review before each new client and every 6 months. "Personal" always means pseudonymized (rule 3); **Sensitive** data goes into no tool without the client's written approval.
+
+### Layer 2: our accounts approved for client data
+
+| Tool | Allowed classes | Why, and conditions |
 |---|---|---|
-| _(to fill before the first client)_ | | Confirm current terms: no training on inputs, retention period, data region |
+| **OpenAI**: ChatGPT Business or Enterprise, and the API | Public, Business confidential, Personal (pseudonymized) | OpenAI states it does not train on data from these plans by default. Retention is configurable (zero retention on the API for qualifying accounts). |
+| **Anthropic Claude**: Team or Enterprise, and the API (includes Claude Code under commercial terms) | Public, Business confidential, Personal (pseudonymized) | Anthropic states it does not train on data under commercial terms. Standard retention is 30 days. |
+| **Google Gemini**: Gemini in qualifying Google Workspace editions, and the paid tier of the Gemini API | Public, Business confidential, Personal (pseudonymized) | Google states it does not use this data to train or improve products. **The free API tier and Google AI Studio without billing do use it**: forbidden for client data. |
+
+### Layer 1: internal work only (no client data)
+
+Any layer 2 tool works here too. Consumer plans we pay for (for example Claude Max) are fine for internal work with model training turned off in their privacy settings.
+
+| Tool | Allowed classes | Why, and conditions |
+|---|---|---|
+| **Cursor** | Public; code from client repos only with Privacy Mode enforced for the whole team | With Privacy Mode, Cursor states it does not train on the code and has zero-retention agreements with its model providers. Without it, Cursor may store and train on the code. Never personal data. |
+| **Grok (xAI)** | Public | The consumer version uses what you type for training. Business and API plans exist, but we have not verified their data terms. Re-evaluate if a client asks for it. |
+| **Meta's Muse agent** | Public | Launched in 2026; we found no published enterprise data-handling terms, and analysts flag trust concerns. Re-evaluate when they exist. |
+| **Hermes Agent (Nous Research)** | Whatever the connected model allows | Open source and runs on our own server; data goes only to the model provider it is configured with. Candidate for clients who don't want data leaving their infrastructure. |
+
+### Layer 3: the client's licenses
+
+The client chooses and pays for the vendor; we don't impose one. Before connecting any process, we check with their admin:
+
+- The plan is a business or API plan, not a consumer one.
+- Training on their data is off and retention matches what the client wants.
+- Directio has its own user or key, with least access, revocable when the engagement ends.
+- Usage costs are billed to the client, with a spending cap set.
+
+What we checked is recorded in the client's repo.
+
+### Clients starting on basic or free plans
+
+Most of our clients start on basic or free plans. We don't ask them for a business plan to start: first we show value, then we give leadership reasons to move to one. Meanwhile:
+
+- **In their own basic or free accounts:** only exercises with made-up data, public information, or data without real names, amounts or identifiers. We show them how to turn off training on their data in the privacy settings.
+- **Their real, confidential data:** we process it ourselves on our approved layer 2 accounts, for example the API. The client buys nothing for the pilot.
+- **For the solution to run in their company:** we recommend a business or API plan in their name (layer 3), once they have seen the value.
+
+### Never, for client data
+
+A client's real, confidential data in free or personal accounts of any tool (ChatGPT, Claude, Gemini, Grok, Meta AI and the like), ours or the client's, even when the tool's business version is listed above.
 
 ## For agents
 
