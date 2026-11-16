@@ -2,6 +2,8 @@
 
 One page. Built from the profile and the synthetic scenario result, and adjusted with real data.
 
+Origin: <area diagnostic and version>, <champion diagnostic and reviewed map>. First task for [training and Companion Guide](capacitacion-champions.en.md): <task, reviewer and acceptance criterion>. Use real data only with compatible authorization; otherwise retain the fictitious scenario.
+
 ## The problem, in their words
 
 One or two quotes and today's cost (hours, money, lost customers). Only what was measured or what they said.
@@ -31,6 +33,8 @@ We never promise a saving before measuring the baseline.
 What this pilot does not do: systems not touched, automatic sends, other processes.
 
 ## Calendar
+
+Indicative sequence to agree on, not committed dates. Record the prior diagnostic and its effort separately from training.
 
 | Week | What happens | What the client sees |
 |---|---|---|

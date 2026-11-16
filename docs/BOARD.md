@@ -6,7 +6,7 @@ Lo que está en curso ahora. Lo actualiza el PR que lo cambia.
 _(nada)_
 
 ## En verificación
-_(nada)_
+- #10: plantillas de diagnóstico por área y champion, ruta de capacitación y Companion Guide. Revisión independiente y CI; merge pendiente de una persona.
 
 ## Necesita a una persona
 - Pasar la organización a GitHub Team cuando se firme el primer cliente (ADR 0001)

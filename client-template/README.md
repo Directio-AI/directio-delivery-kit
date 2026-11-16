@@ -9,16 +9,21 @@ Lo que usamos con cada cliente, desde la primera llamada hasta el piloto. Se cop
 | Archivo | Para qué | Cuándo |
 |---|---|---|
 | `ficha-cliente.md` | Lo que sabemos, de dónde salió y qué falta. Mapa de procesos con puntaje de encaje con IA. | Antes y después de cada reunión |
+| `diagnostico-area.md` | Objetivos, procesos candidatos, restricciones y dependencias; se reutiliza al incorporar champions. | Al incorporar o actualizar un área |
+| `diagnostico-champion.md` | Mapa detallado, punto de partida con IA y condiciones para la primera práctica. | Antes de capacitar a cada champion |
 | `solicitud-datos.md` | Lista de lo que pedimos al cliente, incluida una cuenta o llave de IA del lado del cliente. | Al cerrar la primera reunión |
 | `escenario-sintetico.md` | Cómo armar datos de prueba ficticios para avanzar sin esperar al cliente. | Desde el día 1 |
 | `propuesta-piloto.md` | Piloto con línea base, KPI, nivel de autonomía y lo que queda fuera. Incluye el registro de datos. | Al proponer |
 | `adopcion.md` | Guion de la primera sesión, primeras victorias por rol y página "Empieza aquí". | Al arrancar el piloto |
+| `capacitacion-champions.md` | Seis sesiones con el proceso propio y seguimiento mediante el AI Companion Guide. | Después del diagnóstico y la preparación del piloto |
 
 ## Cómo se usa
 
-1. `scripts/new-client.sh <cliente>` crea la carpeta del cliente con la ficha, la solicitud, la propuesta y la adopción, más una carpeta `escenario-SINTETICO/` vacía. La guía del escenario se consulta aquí, no se copia.
-2. Llena la ficha con lo que ya sabes y marca cada dato como **confirmado** (lo dijo el cliente o lo vimos), **inferido** (lo deducimos) o **pendiente**.
-3. Arma el escenario sintético del proceso candidato y prueba el piloto con él mientras llegan los datos reales.
-4. Cuando llegan los datos reales, se repite la misma prueba con ellos. El escenario sintético nunca se presenta como resultado del cliente.
+1. `scripts/new-client.sh <cliente> [destino]` copia las plantillas en español y crea `escenario-SINTETICO/` fuera de este repositorio. La guía del escenario se consulta aquí, no se copia. Para varias áreas o champions, duplica sus fichas dentro del espacio autorizado del cliente y conserva referencias y versiones.
+2. Llena la ficha de cliente y el diagnóstico del área. Marca cada dato **[C] confirmado**, **[I] inferido** o **[P] pendiente**, con fuente y fecha; asigna responsables a los pendientes.
+3. Completa el diagnóstico del champion y su mapa detallado. Si el área ya está diagnosticada, verifica su vigencia y reutilízala en lugar de repetirla.
+4. Prepara la propuesta de piloto, el escenario sintético con clave de respuestas y la primera plantilla. Verifica las condiciones de inicio del diagnóstico individual.
+5. Inicia la capacitación y el Companion Guide con esa tarea. La sesión 3 valida y completa el mapa inicial; no sustituye el diagnóstico previo.
+6. Con autorización compatible para datos reales, repite la prueba en el entorno aprobado y mide contra una línea base comparable. El escenario sintético nunca se presenta como resultado del cliente.
 
 Los entregables para clientes de Latinoamérica van solo en español.
