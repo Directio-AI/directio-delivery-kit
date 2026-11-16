@@ -1,6 +1,6 @@
 # Plan
 
-_Última actualización: 2026-10-21_
+_Última actualización: 2026-11-16_
 
 ## Propósito
 
@@ -17,7 +17,8 @@ Objetivo: que el repositorio pueda recibir trabajo de forma segura antes de empe
 - [x] Convención de idioma: español primero, inglés segundo
 - [x] Estándar de ingeniería: código limpio, trabajo con agentes, evaluaciones y observabilidad (`docs/engineering-standard.md`)
 - [ ] Prompts de cada rol en `agents/`
-- [ ] Plantilla de espacio de cliente y script para crear clientes nuevos
+- [x] Plantilla de espacio de cliente y script para crear clientes nuevos (PR #9)
+- [ ] Diagnóstico por área y champion conectado con capacitación y Companion Guide (#10, en revisión)
 - [ ] Configuración del repositorio aplicada (ver ADR 0001; parte depende del plan de GitHub)
 
 ## Siguiente fase: primer cliente

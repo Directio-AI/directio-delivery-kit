@@ -2,6 +2,8 @@
 
 Una página. Se arma con la ficha y el resultado del escenario sintético, y se ajusta con datos reales.
 
+Origen: <diagnóstico del área y versión>, <diagnóstico del champion y mapa revisado>. Primera tarea para [capacitación y Companion Guide](capacitacion-champions.md): <tarea, revisor y criterio de aceptación>. Datos reales solo con autorización compatible; de lo contrario, mantener el escenario ficticio.
+
 ## El problema, en sus palabras
 
 Una o dos citas y el costo de hoy (horas, dinero, clientes perdidos). Solo lo medido o lo que ellos dijeron.
@@ -31,6 +33,8 @@ Nunca prometemos un ahorro antes de medir la línea base.
 Lo que no hace este piloto: sistemas que no se tocan, envíos automáticos, otros procesos.
 
 ## Calendario
+
+Secuencia orientativa para acordar; no son fechas comprometidas. El diagnóstico previo y su esfuerzo se registran por separado de la capacitación.
 
 | Semana | Qué pasa | Qué ve el cliente |
 |---|---|---|

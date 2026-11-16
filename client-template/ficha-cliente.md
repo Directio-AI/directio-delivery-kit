@@ -23,9 +23,11 @@ Citas cortas, atribuidas a área o puesto, no a persona, si el documento va a ci
 |---|---|---|---|
 | | Reunión, transcripción, documento, sitio web | | |
 
-## 4. Mapa de procesos y encaje con IA
+## 4. Inventario de procesos y encaje con IA
 
-Un renglón por proceso candidato. Puntaje de 1 a 3 en cada columna; el total ordena la lista.
+Un renglón por proceso candidato. Puntaje de 1 a 3 en cada columna; el total ordena candidatos con información comparable. Si falta un dato, marque [P] y deje el total pendiente. El mapa detallado se completa en [diagnostico-champion.md](diagnostico-champion.md), dentro del [diagnóstico del área](diagnostico-area.md).
+
+Antes de priorizar, confirme que existe una prueba permitida y revisable. Disponibilidad de datos no equivale a autorización. Un puntaje alto no sustituye los permisos ni la decisión sobre el riesgo.
 
 | Proceso | Dolor (cuánto cuesta hoy) | Datos disponibles | Repetitivo y basado en documentos | Riesgo si la IA se equivoca (3 = bajo) | Medible en semanas | Total |
 |---|---|---|---|---|---|---|
@@ -35,7 +37,7 @@ Cómo puntuar:
 - **Dolor:** 3 si el cliente lo nombró sin que preguntáramos y tiene un costo visible (horas, dinero, clientes perdidos).
 - **Datos disponibles:** 3 si existen ejemplos históricos que nos pueden dar pronto; 1 si hay que generarlos.
 - **Repetitivo y basado en documentos:** 3 si es leer, comparar, extraer o redactar sobre documentos parecidos.
-- **Riesgo:** 3 si una persona revisa todo antes de que salga; 1 si un error llega al cliente o a una autoridad.
+- **Riesgo:** 3 solo con consecuencias acotadas y controles verificables para detectar errores antes de usar la salida; 1 si un error puede llegar al cliente o a una autoridad. La revisión humana por sí sola no acredita riesgo bajo; documente consecuencias y controles.
 - **Medible:** 3 si hay una línea base que se puede tomar en una semana.
 
 ## 5. Proceso elegido para el primer piloto

@@ -23,9 +23,11 @@ Short quotes, attributed to an area or role rather than a person if the document
 |---|---|---|---|
 | | Meeting, transcript, document, website | | |
 
-## 4. Process map and AI fit
+## 4. Process inventory and AI fit
 
-One row per candidate process. Score each column from 1 to 3; the total orders the list.
+One row per candidate process. Score each column from 1 to 3; the total ranks candidates with comparable information. If a fact is missing, mark [P] and leave the total pending. Complete the detailed map in [diagnostico-champion.md](diagnostico-champion.en.md), within the [area diagnostic](diagnostico-area.en.md).
+
+Before prioritizing, confirm that a permitted, reviewable trial is possible. Data availability does not equal authorization. A high score does not replace permissions or the risk decision.
 
 | Process | Pain (what it costs today) | Data available | Repetitive and document-based | Risk if the AI is wrong (3 = low) | Measurable in weeks | Total |
 |---|---|---|---|---|---|---|
@@ -35,7 +37,7 @@ How to score:
 - **Pain:** 3 if the client named it unprompted and it has a visible cost (hours, money, lost customers).
 - **Data available:** 3 if historical examples exist and they can give them to us soon; 1 if they have to be created.
 - **Repetitive and document-based:** 3 if it is reading, comparing, extracting or drafting over similar documents.
-- **Risk:** 3 if a person reviews everything before it goes out; 1 if a mistake reaches the customer or an authority.
+- **Risk:** 3 only with bounded consequences and verifiable controls that detect errors before the output is used; 1 if an error could reach the customer or an authority. Human review alone does not establish low risk; document consequences and controls.
 - **Measurable:** 3 if a baseline can be taken within a week.
 
 ## 5. Process chosen for the first pilot
