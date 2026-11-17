@@ -10,4 +10,4 @@ Lista ordenada del trabajo listo para empezar. El Orquestador toma de aquí; las
 | 5 | Radar: primera lista de fuentes y tarea semanal | 1 | Pública |
 | 6 | Crear las etiquetas de estado del ADR 0001 | | Pública |
 
-La plantilla de cliente y `scripts/new-client.sh` se entregaron en PR #9. La ampliación documental de diagnóstico por área y champion, capacitación y Companion Guide está en verificación en #10; ver BOARD.
+La plantilla de cliente y `scripts/new-client.sh` se entregaron en PR #9. La ampliación de diagnóstico por área y champion, capacitación y Companion Guide se incorporó en PR #11 (#10 cerrado). Los mapas visuales obligatorios se verifican en #12; ver BOARD.

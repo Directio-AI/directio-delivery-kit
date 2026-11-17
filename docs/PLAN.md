@@ -1,6 +1,6 @@
 # Plan
 
-_Última actualización: 2026-11-16_
+_Última actualización: 2026-11-17_
 
 ## Propósito
 
@@ -18,7 +18,8 @@ Objetivo: que el repositorio pueda recibir trabajo de forma segura antes de empe
 - [x] Estándar de ingeniería: código limpio, trabajo con agentes, evaluaciones y observabilidad (`docs/engineering-standard.md`)
 - [ ] Prompts de cada rol en `agents/`
 - [x] Plantilla de espacio de cliente y script para crear clientes nuevos (PR #9)
-- [ ] Diagnóstico por área y champion conectado con capacitación y Companion Guide (#10, en revisión)
+- [x] Diagnóstico por área y champion conectado con capacitación y Companion Guide (#10, incorporado en PR #11)
+- [ ] Diagramas as is/con IA y revisión humana como parte de cada diagnóstico (#12, en revisión)
 - [ ] Configuración del repositorio aplicada (ver ADR 0001; parte depende del plan de GitHub)
 
 ## Siguiente fase: primer cliente

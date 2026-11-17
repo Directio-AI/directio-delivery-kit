@@ -5,6 +5,7 @@ Las herramientas de IA son potentes pero abruman. Nuestro trabajo es volverlas s
 ## Antes de capacitar a nadie
 
 - [ ] [Diagnóstico del área](diagnostico-area.md) vigente y [diagnóstico del champion](diagnostico-champion.md) revisado: mapa inicial, límites, revisor, piloto y plan de medición. Para un champion nuevo se reutiliza el contexto vigente del área.
+- [ ] Mapas comparativos visibles según [mapa-proceso.md](mapa-proceso.md): as is, intervención elegida y revisión humana. Figura y fuente editable vigentes, con [C]/[I]/[P] y pendientes visibles; la primera tarea corresponde al ID de intervención del piloto.
 - [ ] El dueño o la gerencia dice con claridad, frente al equipo, para qué es la IA. Antes, en privado, preguntamos si el objetivo real es reducir personal: si lo es, lo sabemos antes de pedirle confianza a nadie.
 - [ ] Un campeón interno elegido: curioso, respetado, con tiempo protegido acordado según las sesiones y prácticas.
 - [ ] Un asistente configurado por rol en la cuenta del cliente, con instrucciones e insumos autorizados. Primera tarea y plantilla listas desde el diagnóstico; usar ficticios si falta permiso suficiente para datos reales.

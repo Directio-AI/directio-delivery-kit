@@ -6,6 +6,8 @@ Each person uses the same process throughout. Between sessions they perform a bo
 
 ## Sessions
 
+Start from the diagnostic's [visual map](mapa-proceso.en.md). In session 3 update the as is view with observations; in session 4 adjust the AI proposal and its human review. Keep IDs, sources, [C]/[I]/[P] marks and versions consistent across figures and profiles. Observing a trial or approving a proposal does not automatically confirm the entire current process.
+
 | Axis and session | Objective | Exercise and deliverable |
 |---|---|---|
 | Foundations 1. Possibilities and limits | Recognize AI support, errors and human decisions. | Use the task selected in the diagnostic, compare instructions and detect a prepared error. Deliver review controls. |

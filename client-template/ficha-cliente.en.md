@@ -44,6 +44,8 @@ How to score:
 
 Which one, why (with the score), and which synthetic scenario represents it (`escenario-SINTETICO/`).
 
+Reference to the [visual map](mapa-proceso.en.md) included in the area and champion diagnostics: <version and figure>. It must show as is, intervention points, human review and [C]/[I]/[P] marks; the fit matrix does not replace it.
+
 ## 6. Client constraints
 
 Allowed and forbidden tools, systems not to be touched, human-oversight rules, data rules.
