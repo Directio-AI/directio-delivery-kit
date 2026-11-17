@@ -7,6 +7,14 @@
 
 Complete una copia por área en el espacio autorizado del cliente. Cada dato lleva **[C] confirmado**, **[I] inferido** o **[P] pendiente**, con fuente y fecha. Cada pendiente tiene responsable. Reutilice la [ficha de cliente](ficha-cliente.md); no copie datos del cliente al Delivery Kit.
 
+## Mapa visual del área
+
+**Figura comparativa visible:** pendiente de insertar al inicio de esta ficha. **Fuente editable, versión y exportación:** <referencias autorizadas>.
+
+Complete [mapa-proceso.md](mapa-proceso.md) a nivel de área: as is con entradas, procesos, responsables y entregas entre áreas; propuesta con el punto de intervención de IA y la revisión humana, incluidas excepciones y retorno para corregir. Inserte la figura renderizada aquí; la matriz de candidatos y un enlace externo solos no completan el entregable.
+
+Marque [C]/[I]/[P] también en conexiones y responsables; si el orden se reconstruye, diga que es una hipótesis. Vincule cada intervención con el proceso actual afectado y registre su tipo de apoyo. Reutilice IDs y versiones de los mapas detallados por champion; cada ficha muestra su nivel del recorrido sin duplicar fuentes contradictorias.
+
 ## Objetivos y procesos candidatos
 
 Qué necesita entregar el área, a quién y qué dificultades describe en sus palabras. Use la matriz de la ficha para priorizar; el puntaje no sustituye autorización ni aceptación del riesgo.
@@ -32,5 +40,8 @@ Herramientas y ubicaciones autorizadas, clases de datos, evidencias de permiso, 
 | Cambio de proceso, reglas o dependencias | Actualizar lo afectado, registrar motivo y versión, y revisar las prácticas que dependan de ello. |
 
 ## Cierre
+
+- [ ] Mapa comparativo visible, fuente editable y exportación legible; trazabilidad según mapa-proceso.md.
+- [ ] Dueño revisó el contexto y el mapa, o quedan rotulados como pendientes con responsable y siguiente paso.
 
 Proceso y champion elegidos: <referencia>. Revisó: <dueño, fecha y evidencia>. Pendientes: <pregunta, responsable, siguiente paso y fecha acordada o pendiente>. El diagnóstico no autoriza datos ni amplía el alcance del piloto.

@@ -6,6 +6,14 @@
 
 Reutilice el [diagnóstico del área](diagnostico-area.md). Recoja solo la información faltante o que cambió. Marque cada dato **[C] confirmado**, **[I] inferido** o **[P] pendiente**, con fuente y fecha; cada pendiente lleva responsable.
 
+## Mapa visual del proceso
+
+**Figura comparativa visible:** pendiente de insertar al inicio de esta ficha. **Fuente editable, versión y exportación:** <referencias autorizadas>.
+
+Complete [mapa-proceso.md](mapa-proceso.md) con el as is y la propuesta con IA, mostrando quién recibe, ejecuta, revisa y aprueba. Señale el paso exacto que cambia, sus insumos y límites, las excepciones y el retorno para corregir. Distinga IA en operación, automatización y software construido con IA que funciona sin modelo.
+
+Inserte la figura renderizada aquí, con [C]/[I]/[P] en nodos, responsables y conexiones. Un recorrido no observado debe decir hipótesis o reconstrucción. La tabla siguiente conserva detalle y fuentes; no sustituye el diagrama. Mantenga los mismos IDs en el mapa, los pasos y el registro de intervenciones, y señale la primera intervención candidata.
+
 ## Proceso actual
 
 Recorra un caso completo con quien hace el trabajo y quien revisa. Use datos ficticios fieles a su estructura mientras falte autorización compatible para datos reales. La [solicitud de datos](solicitud-datos.md) orienta los insumos; no es un permiso para usarlos.
@@ -32,6 +40,7 @@ Complete [propuesta-piloto.md](propuesta-piloto.md) con un paso acotado, resulta
 Antes de la [capacitación](capacitacion-champions.md), el facilitador verifica:
 
 - [ ] Área de referencia vigente, champion y revisor identificados, y mapa inicial revisado por el dueño.
+- [ ] As is y propuesta con IA visibles, revisión humana y excepciones dibujadas; marcas, fuentes, versión editable y exportación verificadas según mapa-proceso.md.
 - [ ] Piloto acotado y primera práctica con insumos permitidos, criterios de aceptación y respuestas esperadas.
 - [ ] Línea base medida o plan para medir con volumen y alcance comparables; pendientes con responsable.
 - [ ] Primera plantilla sin datos y apoyo preparados en [adopcion.md](adopcion.md).

@@ -6,7 +6,10 @@ Lo que está en curso ahora. Lo actualiza el PR que lo cambia.
 _(nada)_
 
 ## En verificación
-- #10: plantillas de diagnóstico por área y champion, ruta de capacitación y Companion Guide. Revisión independiente y CI; merge pendiente de una persona.
+- #12: mapa visual obligatorio en diagnósticos de área y champion, intervención de IA, revisión humana y marcas [C]/[I]/[P]. Revisión independiente y CI; merge pendiente de una persona.
+
+## Entregado
+- #10: diagnóstico por área y champion, capacitación y Companion Guide incorporados mediante PR #11 el 16 de noviembre de 2026.
 
 ## Necesita a una persona
 - Pasar la organización a GitHub Team cuando se firme el primer cliente (ADR 0001)

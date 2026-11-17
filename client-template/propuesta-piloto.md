@@ -4,6 +4,8 @@ Una página. Se arma con la ficha y el resultado del escenario sintético, y se 
 
 Origen: <diagnóstico del área y versión>, <diagnóstico del champion y mapa revisado>. Primera tarea para [capacitación y Companion Guide](capacitacion-champions.md): <tarea, revisor y criterio de aceptación>. Datos reales solo con autorización compatible; de lo contrario, mantener el escenario ficticio.
 
+Intervención del [mapa visual](mapa-proceso.md): <ID de intervención, paso as is afectado, tipo de apoyo, versión y revisor humano>. Conservar las marcas [C]/[I]/[P] y las excepciones de esa versión; acordar cambios antes de ampliar el piloto.
+
 ## El problema, en sus palabras
 
 Una o dos citas y el costo de hoy (horas, dinero, clientes perdidos). Solo lo medido o lo que ellos dijeron.

@@ -5,6 +5,7 @@ AI tools are powerful but overwhelming. Our job is to make them simple for the c
 ## Before training anyone
 
 - [ ] Current [area diagnostic](diagnostico-area.en.md) and reviewed [champion diagnostic](diagnostico-champion.en.md): initial map, limits, reviewer, pilot and measurement plan. Reuse the area's current context for a new champion.
+- [ ] Visible comparative maps per [mapa-proceso.md](mapa-proceso.en.md): as is, selected intervention and human review. Current figure and editable source, with [C]/[I]/[P] and visible pending items; the first task matches the pilot's intervention ID.
 - [ ] The owner or management states clearly, in front of the team, what AI is for. Before that, in private, we ask whether the real aim is to cut headcount: if it is, we know before asking anyone for their trust.
 - [ ] An internal champion chosen: curious, respected, with protected time agreed for sessions and practice.
 - [ ] One assistant configured per role in the client's account, with instructions and authorized inputs. First task and template ready from the diagnostic; use fictitious data if sufficient permission for real data is missing.

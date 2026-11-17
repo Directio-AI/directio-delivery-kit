@@ -4,6 +4,8 @@ One page. Built from the profile and the synthetic scenario result, and adjusted
 
 Origin: <area diagnostic and version>, <champion diagnostic and reviewed map>. First task for [training and Companion Guide](capacitacion-champions.en.md): <task, reviewer and acceptance criterion>. Use real data only with compatible authorization; otherwise retain the fictitious scenario.
 
+Intervention from the [visual map](mapa-proceso.en.md): <intervention ID, affected as is step, support type, version and human reviewer>. Keep that version's [C]/[I]/[P] marks and exceptions; agree on changes before expanding the pilot.
+
 ## The problem, in their words
 
 One or two quotes and today's cost (hours, money, lost customers). Only what was measured or what they said.

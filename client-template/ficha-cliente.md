@@ -44,6 +44,8 @@ Cómo puntuar:
 
 Cuál, por qué (con el puntaje), y qué escenario sintético lo representa (`escenario-SINTETICO/`).
 
+Referencia al [mapa visual](mapa-proceso.md) incorporado en los diagnósticos del área y champion: <versión y figura>. Debe mostrar as is, puntos de intervención, revisión humana y marcas [C]/[I]/[P]; la matriz de encaje no lo sustituye.
+
 ## 6. Restricciones del cliente
 
 Herramientas permitidas y prohibidas, sistemas que no se tocan, reglas de supervisión humana, reglas de datos.

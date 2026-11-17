@@ -6,6 +6,8 @@ Cada persona usa un mismo proceso. Entre sesiones realiza una práctica acotada 
 
 ## Sesiones
 
+Use el [mapa visual](mapa-proceso.md) del diagnóstico como punto de partida. En la sesión 3 actualice la vista as is con lo observado; en la 4 ajuste la propuesta con IA y su revisión humana. Conserve IDs, fuentes, marcas [C]/[I]/[P] y versiones en las figuras y fichas. Observar una prueba o aprobar una propuesta no confirma automáticamente el proceso actual completo.
+
 | Eje y sesión | Objetivo | Ejercicio y entregable |
 |---|---|---|
 | Fundamentos 1. Posibilidades y límites | Reconocer apoyos de IA, errores y decisiones humanas. | Usar la tarea elegida en el diagnóstico, comparar instrucciones y detectar un error preparado. Entregar controles de revisión. |

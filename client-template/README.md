@@ -11,6 +11,7 @@ Lo que usamos con cada cliente, desde la primera llamada hasta el piloto. Se cop
 | `ficha-cliente.md` | Lo que sabemos, de dónde salió y qué falta. Mapa de procesos con puntaje de encaje con IA. | Antes y después de cada reunión |
 | `diagnostico-area.md` | Objetivos, procesos candidatos, restricciones y dependencias; se reutiliza al incorporar champions. | Al incorporar o actualizar un área |
 | `diagnostico-champion.md` | Mapa detallado, punto de partida con IA y condiciones para la primera práctica. | Antes de capacitar a cada champion |
+| `mapa-proceso.md` | Diagrama comparativo as is/con IA, revisión humana, excepciones y marcas [C]/[I]/[P]. Fuente editable y criterios de exportación. | Parte de cada diagnóstico |
 | `solicitud-datos.md` | Lista de lo que pedimos al cliente, incluida una cuenta o llave de IA del lado del cliente. | Al cerrar la primera reunión |
 | `escenario-sintetico.md` | Cómo armar datos de prueba ficticios para avanzar sin esperar al cliente. | Desde el día 1 |
 | `propuesta-piloto.md` | Piloto con línea base, KPI, nivel de autonomía y lo que queda fuera. Incluye el registro de datos. | Al proponer |
@@ -21,7 +22,7 @@ Lo que usamos con cada cliente, desde la primera llamada hasta el piloto. Se cop
 
 1. `scripts/new-client.sh <cliente> [destino]` copia las plantillas en español y crea `escenario-SINTETICO/` fuera de este repositorio. La guía del escenario se consulta aquí, no se copia. Para varias áreas o champions, duplica sus fichas dentro del espacio autorizado del cliente y conserva referencias y versiones.
 2. Llena la ficha de cliente y el diagnóstico del área. Marca cada dato **[C] confirmado**, **[I] inferido** o **[P] pendiente**, con fuente y fecha; asigna responsables a los pendientes.
-3. Completa el diagnóstico del champion y su mapa detallado. Si el área ya está diagnosticada, verifica su vigencia y reutilízala en lugar de repetirla.
+3. Completa los mapas visuales del área y del champion con `mapa-proceso.md`: proceso actual, intervención de IA y revisión humana. Inserta las figuras al inicio de cada ficha, con fuente editable, exportación legible y trazabilidad [C]/[I]/[P]. Para varios procesos, duplica el mapa con nombres únicos y actualiza sus referencias. Si el área ya está diagnosticada, verifica y reutiliza su versión vigente.
 4. Prepara la propuesta de piloto, el escenario sintético con clave de respuestas y la primera plantilla. Verifica las condiciones de inicio del diagnóstico individual.
 5. Inicia la capacitación y el Companion Guide con esa tarea. La sesión 3 valida y completa el mapa inicial; no sustituye el diagnóstico previo.
 6. Con autorización compatible para datos reales, repite la prueba en el entorno aprobado y mide contra una línea base comparable. El escenario sintético nunca se presenta como resultado del cliente.
