@@ -55,12 +55,14 @@ Gris: proceso actual. Morado: apoyo propuesto de IA. Azul: revisión o decisión
 
 ## Punto exacto de intervención
 
-| ID de intervención | Paso actual afectado | Tipo de apoyo | Entrada y salida | Límite y revisión humana |
-|---|---|---|---|---|
-| IA-01 [I] | AS-02 [P] | <IA en operación / automatización / construido con IA y operado sin modelo / por definir> | <insumo permitido y resultado verificable> | <qué no decide, quién revisa, criterio y excepción> |
-| IA-02 [I] | AS-03 [P] | <tipo de apoyo por definir> | <datos, reglas y resultado del control> | <cuándo se detiene y quién resuelve los faltantes> |
+| ID de intervención | Paso actual afectado | Tipo de apoyo | Nivel y ruta | Entrada y salida | Límite y revisión humana |
+|---|---|---|---|---|---|
+| IA-01 [I] | AS-02 [P] | <IA en operación / automatización / construido con IA y operado sin modelo / por definir> | <N0-N3 / nube empresarial, paso local o sin modelo / por definir> | <insumo permitido y resultado verificable> | <qué no decide, quién revisa, criterio y excepción> |
+| IA-02 [I] | AS-03 [P] | <tipo de apoyo por definir> | <nivel y ruta por definir> | <datos, reglas y resultado del control> | <cuándo se detiene y quién resuelve los faltantes> |
 
 Distinga la participación de IA en la construcción de software de su uso al ejecutar el proceso. No marque una aplicación determinista como si consultara un modelo en operación sin evidencia. Identifique fuente y reglas aprobadas antes de calcular o actuar. Si un paso solo se elimina o simplifica, indíquelo sin atribuirlo a IA.
+
+**Nivel y ruta.** El nivel sigue las clases de `policy/data-classification.md` del Delivery Kit: N0 pública o ficticia, N1 confidencial de negocio, N2 personal, N3 sensible o restringida por contrato. La ruta dice dónde puede correr ese paso: herramienta aprobada (N0), nube empresarial sin entrenamiento (N1), nube empresarial después de seudonimizar (N2), o modelo local en infraestructura del cliente o sin modelo (N3). Antes de proponer un modelo local, confirme que el paso necesita un modelo; muchos pasos sensibles se resuelven con reglas o fórmulas. Un modelo local requiere un responsable con nombre en el cliente y es una decisión Clase C. El nivel se decide por paso, no por cliente.
 
 ## Trazabilidad del mapa
 

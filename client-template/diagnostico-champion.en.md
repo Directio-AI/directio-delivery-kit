@@ -32,6 +32,8 @@ Volume, frequency and complexity: <record>. Rework and dependencies: <record>. S
 | Questions, expectations and criteria for trusting an output | | |
 | Ability to verify errors and stop a delivery | | |
 | Available time and agreed support | | |
+| AI accounts: company or personal, two-factor, training turned off | | |
+| AI extensions, connectors or integrations used or wanted | | |
 
 ## Preparing the pilot and guide
 
@@ -44,5 +46,6 @@ Before [training](capacitacion-champions.en.md), the facilitator checks:
 - [ ] Bounded pilot and first practice with permitted inputs, acceptance criteria and expected answers.
 - [ ] Measured baseline or a plan to measure with comparable volume and scope; owners for pending items.
 - [ ] First data-free template and support prepared in [adopcion.md](adopcion.en.md).
+- [ ] Each intervention has a level (N0-N3) and route on the map; accounts reviewed and unapproved connectors removed or pending review.
 
 Reviewed by: <owner, date and evidence>. Next step: <action, owner and agreed date or pending>. Complete missing diagnostic conditions before practice. Record diagnostic effort separately from training; no duration is presumed agreed.
