@@ -55,12 +55,14 @@ Gray: current process. Purple: proposed AI support. Blue: human review or decisi
 
 ## Exact intervention point
 
-| Intervention ID | Affected current step | Support type | Input and output | Limit and human review |
-|---|---|---|---|---|
-| IA-01 [I] | AS-02 [P] | <AI at runtime / automation / built with AI and operated without a model / undecided> | <permitted input and verifiable output> | <what it does not decide, reviewer, criterion and exception> |
-| IA-02 [I] | AS-03 [P] | <support type to define> | <data, rules and check result> | <when it stops and who resolves missing inputs> |
+| Intervention ID | Affected current step | Support type | Level and route | Input and output | Limit and human review |
+|---|---|---|---|---|---|
+| IA-01 [I] | AS-02 [P] | <AI at runtime / automation / built with AI and operated without a model / undecided> | <N0-N3 / enterprise cloud, local step or no model / undecided> | <permitted input and verifiable output> | <what it does not decide, reviewer, criterion and exception> |
+| IA-02 [I] | AS-03 [P] | <support type to define> | <level and route to define> | <data, rules and check result> | <when it stops and who resolves missing inputs> |
 
 Distinguish AI participation in building software from its use when running the process. Do not label a deterministic application as consulting a model at runtime without evidence. Identify approved sources and rules before calculating or acting. If a step is simply removed or simplified, say so without attributing it to AI.
+
+**Level and route.** The level follows the classes in the Delivery Kit's `policy/data-classification.en.md`: N0 public or fictitious, N1 business confidential, N2 personal, N3 sensitive or contract-restricted. The route says where that step may run: approved tool (N0), enterprise cloud with no training (N1), enterprise cloud after pseudonymizing (N2), or a local model on client infrastructure or no model at all (N3). Before proposing a local model, confirm the step needs a model; many sensitive steps are solved with rules or formulas. A local model needs a named owner at the client and is a Class C decision. The level is decided per step, not per client.
 
 ## Map traceability
 

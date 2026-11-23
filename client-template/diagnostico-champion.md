@@ -32,6 +32,8 @@ Volumen, frecuencia y complejidad: <registro>. Retrabajos y dependencias: <regis
 | Dudas, expectativas y criterio para confiar en una salida | | |
 | Capacidad de verificar errores y detener una entrega | | |
 | Tiempo disponible y apoyo acordado | | |
+| Cuentas de IA: de empresa o personales, doble factor, entrenamiento apagado | | |
+| Extensiones, conectores o integraciones de IA que usa o quiere usar | | |
 
 ## Preparación del piloto y la guía
 
@@ -44,5 +46,6 @@ Antes de la [capacitación](capacitacion-champions.md), el facilitador verifica:
 - [ ] Piloto acotado y primera práctica con insumos permitidos, criterios de aceptación y respuestas esperadas.
 - [ ] Línea base medida o plan para medir con volumen y alcance comparables; pendientes con responsable.
 - [ ] Primera plantilla sin datos y apoyo preparados en [adopcion.md](adopcion.md).
+- [ ] Cada intervención con nivel (N0-N3) y ruta en el mapa; cuentas revisadas y conectores no aprobados retirados o pendientes de revisión.
 
 Revisó: <dueño, fecha y evidencia>. Siguiente paso: <acción, responsable y fecha acordada o pendiente>. Si faltan condiciones, complete el diagnóstico antes de la práctica. Registre su esfuerzo separado de la capacitación; no presume una duración acordada.

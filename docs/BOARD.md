@@ -6,9 +6,11 @@ Lo que está en curso ahora. Lo actualiza el PR que lo cambia.
 _(nada)_
 
 ## En verificación
-- #12: mapa visual obligatorio en diagnósticos de área y champion, intervención de IA, revisión humana y marcas [C]/[I]/[P]. Revisión independiente y CI; merge pendiente de una persona.
+_(nada)_
 
 ## Entregado
+- #14: nivel de sensibilidad (N0-N3) y ruta por intervención, revisión de cuentas y conectores, señales de alerta y regla de dos de tres en las plantillas de diagnóstico y capacitación.
+- #12: mapa visual obligatorio en diagnósticos, incorporado mediante PR #13 el 17 de noviembre de 2026.
 - #10: diagnóstico por área y champion, capacitación y Companion Guide incorporados mediante PR #11 el 16 de noviembre de 2026.
 
 ## Necesita a una persona
